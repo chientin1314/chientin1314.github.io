@@ -55,13 +55,14 @@
               800: '#462661',
               900: '#2E1A40',
             },
-            leaf: {
-              50: '#F2F7F4',
-              100: '#E1EDE6',
-              200: '#C3DBC9',
-              500: '#4F7A5E',
-              600: '#3E634B',
-              700: '#2F4D39',
+            crimson: {
+              50: '#FDF4F5',
+              100: '#FCE7EA',
+              200: '#F8CFD6',
+              400: '#E57A8E',
+              500: '#C94A63',
+              600: '#A8354C',
+              700: '#87263A',
             }
           }
         }
@@ -88,7 +89,7 @@
   </script>
 
   <style>
-    /* 紙張質感與溫潤底色設定（紫綠自然調） */
+    /* 紙張質感與溫潤底色設定（紫紅自然調） */
     body {
       background-color: #FAF8FC;
       color: #2E2638;
@@ -98,7 +99,7 @@
       overflow-x: hidden;
       background-image: 
         radial-gradient(rgba(142, 91, 184, 0.08) 1px, transparent 0),
-        radial-gradient(rgba(79, 122, 94, 0.07) 1px, transparent 0);
+        radial-gradient(rgba(201, 74, 99, 0.07) 1px, transparent 0);
       background-size: 24px 24px;
       background-position: 0 0, 12px 12px;
     }
@@ -137,7 +138,7 @@
   <!-- 手機版頂部導覽列 (桌機隱藏，手機 375px 完美適配與漢堡選單) -->
   <nav class="lg:hidden sticky top-0 z-50 bg-[#FAF8FC]/95 backdrop-blur-md border-b border-sunset-200/80 px-5 py-3.5 flex items-center justify-between shadow-sm">
     <a href="#top" class="flex items-center gap-2.5 font-literary font-bold text-lg text-sunset-900">
-      <span class="w-8 h-8 rounded-full bg-gradient-to-br from-sunset-500 to-leaf-600 text-white flex items-center justify-center text-sm shadow-sm">C</span>
+      <span class="w-8 h-8 rounded-full bg-gradient-to-br from-crimson-500 to-sunset-600 text-white flex items-center justify-center text-sm shadow-sm">C</span>
       <span>紅蜻蜓｜Chien Tin</span>
     </a>
     <button id="mobile-menu-btn" aria-label="開啟網站選單" aria-expanded="false" class="p-2.5 rounded-xl bg-sunset-100 text-sunset-800 hover:bg-sunset-200 transition focus:outline-none focus:ring-2 focus:ring-sunset-400">
@@ -166,23 +167,23 @@
 
       <!-- ==================== 左側固定個人名片區 (Header / Hero) ==================== -->
       <header class="lg:col-span-4 lg:sticky lg:top-10 mb-8 lg:mb-0">
-        <div class="bg-gradient-to-b from-[#F7F1FC] via-[#EFF6F2] to-[#E6F0EA] rounded-3xl p-7 sm:p-8 border border-sunset-200/90 shadow-lg shadow-sunset-900/5 relative overflow-hidden">
+        <div class="bg-gradient-to-b from-[#FDF5F7] via-[#F9EFF8] to-[#F3EBF9] rounded-3xl p-7 sm:p-8 border border-sunset-200/90 shadow-lg shadow-sunset-900/5 relative overflow-hidden">
           
-          <!-- 紫綠柔光裝飾 -->
-          <div class="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-gradient-to-br from-sunset-300/35 to-purple-200/30 blur-2xl pointer-events-none"></div>
-          <div class="absolute -bottom-16 -left-16 w-44 h-44 rounded-full bg-gradient-to-tr from-leaf-200/45 to-emerald-100/30 blur-2xl pointer-events-none"></div>
+          <!-- 紅紫柔光裝飾 -->
+          <div class="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-gradient-to-br from-crimson-200/45 to-sunset-300/35 blur-2xl pointer-events-none"></div>
+          <div class="absolute -bottom-16 -left-16 w-44 h-44 rounded-full bg-gradient-to-tr from-sunset-200/45 to-crimson-100/35 blur-2xl pointer-events-none"></div>
 
           <div class="relative z-10 flex flex-col items-center text-center">
-            <!-- 文字頭像（紫綠漸層印章頭像） -->
-            <div class="w-24 h-24 rounded-full bg-gradient-to-br from-sunset-500 via-sunset-600 to-leaf-600 p-1 shadow-md mb-5">
-              <div class="w-full h-full rounded-full bg-[#FAF7FC] flex items-center justify-center border border-sunset-200">
-                <span class="font-literary text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-sunset-600 to-leaf-700 select-none">C</span>
+            <!-- 文字頭像（紅紫雙色漸層印章頭像） -->
+            <div class="w-24 h-24 rounded-full bg-gradient-to-br from-crimson-500 to-sunset-600 p-1 shadow-md mb-5">
+              <div class="w-full h-full rounded-full bg-[#FAF7FC] flex items-center justify-center border border-crimson-200">
+                <span class="font-literary text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-crimson-600 to-sunset-700 select-none">C</span>
               </div>
             </div>
 
             <!-- 品牌小標：紅蜻蜓 -->
-            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-sm font-medium bg-white/85 text-sunset-700 border border-sunset-200/80 mb-3 shadow-xs">
-              <span>🪻</span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-sm font-medium bg-crimson-50/90 text-crimson-700 border border-crimson-200/80 mb-3 shadow-2xs">
+              <span>🍁</span>
               <span>紅蜻蜓的療癒角落</span>
             </span>
 
@@ -192,22 +193,22 @@
             </h1>
 
             <!-- 一句話身分與地區 -->
-            <p class="text-base font-medium text-leaf-700 flex items-center justify-center gap-1.5 mb-5">
+            <p class="text-base font-medium text-sunset-700 flex items-center justify-center gap-1.5 mb-5">
               <span>🌱 愛綠植花人</span>
-              <span class="text-sunset-300">｜</span>
+              <span class="text-crimson-300">｜</span>
               <span>📍 苗栗縣</span>
             </p>
 
             <!-- 主標語（採用選項 B，結合庭院花園夢想與花鳥繪畫） -->
-            <p class="font-literary text-lg leading-relaxed text-sunset-900/90 bg-white/65 rounded-2xl p-4 border border-sunset-200/60 mb-6">
+            <p class="font-literary text-lg leading-relaxed text-sunset-900/90 bg-white/75 rounded-2xl p-4 border border-crimson-200/60 mb-6">
               「從一株植物、一幅花鳥畫開始，一步步築起心中的庭院花園。」
             </p>
 
             <!-- 三個代表關鍵字 -->
             <div class="flex flex-wrap justify-center gap-2 mb-7">
-              <span class="px-3.5 py-1.5 rounded-full text-sm font-medium bg-white/90 text-sunset-800 border border-sunset-200 shadow-2xs">🌿 綠化植物</span>
-              <span class="px-3.5 py-1.5 rounded-full text-sm font-medium bg-white/90 text-sunset-800 border border-sunset-200 shadow-2xs">🐱 貓咪</span>
-              <span class="px-3.5 py-1.5 rounded-full text-sm font-medium bg-white/90 text-sunset-800 border border-sunset-200 shadow-2xs">🎨 繪畫</span>
+              <span class="px-3.5 py-1.5 rounded-full text-sm font-medium bg-sunset-50/90 text-sunset-800 border border-sunset-200 shadow-2xs">🌿 綠化植物</span>
+              <span class="px-3.5 py-1.5 rounded-full text-sm font-medium bg-crimson-50/90 text-crimson-700 border border-crimson-200 shadow-2xs">🐱 貓咪</span>
+              <span class="px-3.5 py-1.5 rounded-full text-sm font-medium bg-sunset-100/80 text-sunset-800 border border-sunset-200 shadow-2xs">🎨 繪畫</span>
             </div>
 
             <!-- 桌機版快速導覽選單 -->
@@ -232,10 +233,10 @@
 
             <!-- 主要行動按鈕 (CTA) -->
             <div class="w-full flex flex-col sm:flex-row lg:flex-col gap-3">
-              <a href="#works" class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-sunset-600 to-leaf-600 hover:from-sunset-700 hover:to-leaf-700 text-white font-medium text-base shadow-md shadow-sunset-600/20 transition transform hover:-translate-y-0.5 text-center">
+              <a href="#works" class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-crimson-500 to-sunset-600 hover:from-crimson-600 hover:to-sunset-700 text-white font-medium text-base shadow-md shadow-crimson-600/15 transition transform hover:-translate-y-0.5 text-center">
                 欣賞我的作品 ✨
               </a>
-              <a href="#contact" class="w-full py-3.5 px-6 rounded-2xl bg-white/90 hover:bg-white text-leaf-700 font-medium text-base border border-leaf-500/40 transition text-center">
+              <a href="#contact" class="w-full py-3.5 px-6 rounded-2xl bg-white/90 hover:bg-crimson-50/50 text-crimson-700 font-medium text-base border border-crimson-300/70 transition text-center">
                 與我聯絡交流 💌
               </a>
             </div>
@@ -255,7 +256,7 @@
             onerror="this.onerror=null; this.src='https://picsum.photos/seed/sunsetgarden/1200/600';"
             class="w-full h-full object-cover"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-[#241633]/75 via-[#1E3326]/25 to-transparent flex flex-col justify-end p-6 sm:p-8">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#241633]/75 via-[#3B1826]/25 to-transparent flex flex-col justify-end p-6 sm:p-8">
             <p class="text-sunset-200 text-sm tracking-widest uppercase mb-1">GARDEN &amp; ART JOURNAL</p>
             <p class="font-literary text-xl sm:text-2xl text-white font-medium leading-snug">
               在綠意與花影之間，紀錄植物生長與花鳥筆墨的溫柔日常。
@@ -266,15 +267,15 @@
         <!-- 區塊一：關於我 (左右分欄 + 大字引言 + 原則卡片) -->
         <section id="about" class="fade-in-section bg-white/85 rounded-3xl p-6 sm:p-10 border border-sunset-200/70 shadow-sm">
           <div class="flex items-center gap-3 mb-6">
-            <span class="w-10 h-10 rounded-2xl bg-sunset-100 text-sunset-600 flex items-center justify-center text-xl">🌿</span>
+            <span class="w-10 h-10 rounded-2xl bg-crimson-50 text-crimson-600 flex items-center justify-center text-xl">🌿</span>
             <div>
-              <span class="text-xs font-medium tracking-wider text-sunset-500 uppercase">ABOUT ME</span>
+              <span class="text-xs font-medium tracking-wider text-crimson-500 uppercase">ABOUT ME</span>
               <h2 class="text-2xl sm:text-3xl font-bold text-sunset-900">關於我｜夢想與初心</h2>
             </div>
           </div>
 
           <!-- 大字引言 -->
-          <blockquote class="my-6 pl-5 border-l-4 border-sunset-400 bg-sunset-50/80 py-4 pr-5 rounded-r-2xl">
+          <blockquote class="my-6 pl-5 border-l-4 border-crimson-400 bg-gradient-to-r from-crimson-50/70 to-sunset-50/60 py-4 pr-5 rounded-r-2xl">
             <p class="font-literary text-lg sm:text-xl text-sunset-900 leading-relaxed">
               「在喧囂的日常裡，我喜歡靜靜地與大自然共處，享受獨處的片刻。」
             </p>
@@ -284,10 +285,10 @@
           <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center mt-6">
             <div class="md:col-span-7 space-y-4 text-base text-[#2E2638] leading-relaxed">
               <p>
-                我是 <strong class="text-sunset-700">Chien Tin</strong>，一位住在苗栗、熱愛綠意與花卉的植栽人。憑藉著一份單純而堅定的<strong class="text-sunset-700">「意志力」</strong>，我一步步朝著心中的夢想前進——期待在不久的將來，打造一間擁有美麗<strong class="text-leaf-700">庭院花園的店面</strong>，讓來到這裡的每一位朋友，都能感受到植物帶來的療癒力量。
+                我是 <strong class="text-crimson-600">Chien Tin</strong>，一位住在苗栗、熱愛綠意與花卉的植栽人。憑藉著一份單純而堅定的<strong class="text-sunset-700">「意志力」</strong>，我一步步朝著心中的夢想前進——期待在不久的將來，打造一間擁有美麗<strong class="text-crimson-600">庭院花園的店面</strong>，讓來到這裡的每一位朋友，都能感受到植物帶來的療癒力量。
               </p>
               <p>
-                無論是照料每一株花草，或是與人真誠相待，我始終把<strong class="text-sunset-700">「承諾、誠信、原則、互助」</strong>放在心上，這是我的生活態度，也是對每一次相遇的溫柔心意。
+                無論是照料每一株花草，或是與人真誠相待，我始終把<strong class="text-crimson-600">「承諾、誠信、原則、互助」</strong>放在心上，這是我的生活態度，也是對每一次相遇的溫柔心意。
               </p>
             </div>
 
@@ -306,21 +307,21 @@
 
           <!-- 四個做事原則小徽章 -->
           <div class="mt-8 pt-6 border-t border-sunset-100">
-            <p class="text-sm font-medium text-leaf-700 mb-3">✨ 我的做事原則</p>
+            <p class="text-sm font-medium text-sunset-700 mb-3">✨ 我的做事原則</p>
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <div class="bg-leaf-50/80 border border-leaf-200 rounded-2xl p-3.5 text-center">
+              <div class="bg-sunset-50/80 border border-sunset-200 rounded-2xl p-3.5 text-center">
                 <span class="block text-lg mb-1">🤝</span>
                 <span class="font-literary font-bold text-sunset-900">承諾</span>
               </div>
-              <div class="bg-sunset-50/80 border border-sunset-200 rounded-2xl p-3.5 text-center">
-                <span class="block text-lg mb-1">💜</span>
+              <div class="bg-crimson-50/80 border border-crimson-200 rounded-2xl p-3.5 text-center">
+                <span class="block text-lg mb-1">❤️</span>
                 <span class="font-literary font-bold text-sunset-900">誠信</span>
               </div>
-              <div class="bg-leaf-50/80 border border-leaf-200 rounded-2xl p-3.5 text-center">
+              <div class="bg-sunset-50/80 border border-sunset-200 rounded-2xl p-3.5 text-center">
                 <span class="block text-lg mb-1">🧭</span>
                 <span class="font-literary font-bold text-sunset-900">原則</span>
               </div>
-              <div class="bg-sunset-50/80 border border-sunset-200 rounded-2xl p-3.5 text-center">
+              <div class="bg-crimson-50/80 border border-crimson-200 rounded-2xl p-3.5 text-center">
                 <span class="block text-lg mb-1">🌱</span>
                 <span class="font-literary font-bold text-sunset-900">互助</span>
               </div>
@@ -328,12 +329,12 @@
           </div>
         </section>
 
-        <!-- 區塊二（依 3-1 順序第 1 個）：興趣與生活 (交錯紫綠柔光底色 + 照片牆) -->
-        <section id="life" class="fade-in-section bg-gradient-to-br from-[#F4ECFA] to-[#E6F2EB] rounded-3xl p-6 sm:p-10 border border-sunset-200/80 shadow-sm">
+        <!-- 區塊二（依 3-1 順序第 1 個）：興趣與生活 (交錯紅紫柔光底色 + 照片牆) -->
+        <section id="life" class="fade-in-section bg-gradient-to-br from-[#FDF5F7] via-[#F9EFF8] to-[#F3EBF9] rounded-3xl p-6 sm:p-10 border border-sunset-200/80 shadow-sm">
           <div class="flex items-center gap-3 mb-4">
-            <span class="w-10 h-10 rounded-2xl bg-white text-sunset-600 flex items-center justify-center text-xl shadow-2xs">🐱</span>
+            <span class="w-10 h-10 rounded-2xl bg-white text-crimson-500 flex items-center justify-center text-xl shadow-2xs">🐱</span>
             <div>
-              <span class="text-xs font-medium tracking-wider text-leaf-700 uppercase">DAILY &amp; INTERESTS</span>
+              <span class="text-xs font-medium tracking-wider text-crimson-600 uppercase">DAILY &amp; INTERESTS</span>
               <h2 class="text-2xl sm:text-3xl font-bold text-sunset-900">興趣與生活</h2>
             </div>
           </div>
@@ -341,6 +342,40 @@
           <p class="text-base text-[#2E2638] mb-7 leading-relaxed">
             我的生活很簡單，總是圍繞著<strong>綠化植物、貓咪與繪畫</strong>。在陽光灑落的午後，照料花草、觀察植物生長的姿態，或是提起畫筆描繪自然的美好，都是我最珍惜的療癒時光。
           </p>
+
+          <!-- 三欄生活照片牆 -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <figure class="rounded-2xl overflow-hidden border border-sunset-200 bg-white shadow-2xs">
+              <div class="aspect-[4/3] overflow-hidden">
+                <img src="life1.jpg" alt="綠化植物日常" loading="lazy" onerror="this.onerror=null; this.src='https://picsum.photos/seed/greenplant/600/450';" class="w-full h-full object-cover" />
+              </div>
+              <figcaption class="p-3.5 text-center text-sm font-medium text-sunset-800 bg-sunset-50/70">🌿 綠化植物</figcaption>
+            </figure>
+            <figure class="rounded-2xl overflow-hidden border border-crimson-200 bg-white shadow-2xs">
+              <div class="aspect-[4/3] overflow-hidden">
+                <img src="life2.jpg" alt="貓咪陪伴時光" loading="lazy" onerror="this.onerror=null; this.src='https://picsum.photos/seed/cozycat/600/450';" class="w-full h-full object-cover" />
+              </div>
+              <figcaption class="p-3.5 text-center text-sm font-medium text-crimson-700 bg-crimson-50/70">🐱 貓咪相伴</figcaption>
+            </figure>
+            <figure class="rounded-2xl overflow-hidden border border-sunset-200 bg-white shadow-2xs">
+              <div class="aspect-[4/3] overflow-hidden">
+                <img src="life3.jpg" alt="花鳥繪畫時光" loading="lazy" onerror="this.onerror=null; this.src='https://picsum.photos/seed/floralart/600/450';" class="w-full h-full object-cover" />
+              </div>
+              <figcaption class="p-3.5 text-center text-sm font-medium text-sunset-800 bg-sunset-50/70">🎨 靜心繪畫</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- 區塊三（依 3-1 順序第 2 個）：作品集 -->
+        <section id="works" class="fade-in-section bg-white/85 rounded-3xl p-6 sm:p-10 border border-sunset-200/70 shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-10 h-10 rounded-2xl bg-sunset-100 text-sunset-600 flex items-center justify-center text-xl">🎨</span>
+            <div>
+              <span class="text-xs font-medium tracking-wider text-sunset-600 uppercase">PORTFOLIO</span>
+              <h2 class="text-2xl sm:text-3xl font-bold text-sunset-900">作品集</h2>
+            </div>
+          </div>
+
           <p class="text-base text-[#2E2638] mb-7 leading-relaxed">
             這裡紀錄了我與花草、畫筆對話的點滴。從植物種植的細心培育，到花鳥寫意的筆墨展現，每一件作品都承載著我對自然萬物的感受與創意。
           </p>
@@ -348,8 +383,8 @@
           <!-- 兩欄作品卡片格（手機自動排成 1 欄） -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- 作品卡片 1：依據經歷 1985 年花卉種植專精 -->
-            <article class="rounded-2xl overflow-hidden border border-leaf-200 bg-leaf-50/50 flex flex-col shadow-2xs hover:shadow-md transition">
-              <div class="aspect-[16/10] overflow-hidden bg-leaf-100 relative">
+            <article class="rounded-2xl overflow-hidden border border-sunset-200 bg-sunset-50/50 flex flex-col shadow-2xs hover:shadow-md transition">
+              <div class="aspect-[16/10] overflow-hidden bg-sunset-100 relative">
                 <img 
                   src="work1.jpg" 
                   alt="花卉種植與植物培育紀錄" 
@@ -357,7 +392,7 @@
                   onerror="this.onerror=null; this.src='https://picsum.photos/seed/flowerbloom/800/500';"
                   class="w-full h-full object-cover"
                 />
-                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium bg-white/95 text-leaf-700 shadow-2xs">
+                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium bg-white/95 text-sunset-700 shadow-2xs">
                   🌿 植栽培育
                 </span>
               </div>
@@ -368,7 +403,7 @@
                     自 1985 年起投入花卉種植，從土壤、日照到四季習性細心觀察，累積深厚的花卉概念知識與培育經驗。
                   </p>
                 </div>
-                <div class="mt-4 pt-3 border-t border-leaf-200/80 flex items-center justify-between text-sm text-leaf-700">
+                <div class="mt-4 pt-3 border-t border-sunset-200/80 flex items-center justify-between text-sm text-sunset-700">
                   <span>領域：花卉・植物</span>
                   <span>1985 年起持續耕耘</span>
                 </div>
@@ -376,8 +411,8 @@
             </article>
 
             <!-- 作品卡片 2：依據經歷 2002 年花鳥寫意展出 -->
-            <article class="rounded-2xl overflow-hidden border border-sunset-200/90 bg-sunset-50/50 flex flex-col shadow-2xs hover:shadow-md transition">
-              <div class="aspect-[16/10] overflow-hidden bg-sunset-100 relative">
+            <article class="rounded-2xl overflow-hidden border border-crimson-200/90 bg-crimson-50/40 flex flex-col shadow-2xs hover:shadow-md transition">
+              <div class="aspect-[16/10] overflow-hidden bg-crimson-100 relative">
                 <img 
                   src="work2.jpg" 
                   alt="花鳥寫意繪畫展出作品意象" 
@@ -385,7 +420,7 @@
                   onerror="this.onerror=null; this.src='https://picsum.photos/seed/birdpainting/800/500';"
                   class="w-full h-full object-cover"
                 />
-                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium bg-white/95 text-sunset-700 shadow-2xs">
+                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium bg-white/95 text-crimson-700 shadow-2xs">
                   🖌️ 繪畫創作
                 </span>
               </div>
@@ -396,7 +431,7 @@
                     將長年對花卉與自然的細膩觀察融入筆墨，以溫潤寫意筆觸描繪花鳥神韻，並於 2002 年正式參與展覽。
                   </p>
                 </div>
-                <div class="mt-4 pt-3 border-t border-sunset-200/60 flex items-center justify-between text-sm text-sunset-700">
+                <div class="mt-4 pt-3 border-t border-crimson-200/60 flex items-center justify-between text-sm text-crimson-700">
                   <span>領域：花鳥寫意</span>
                   <span>2002 公開展出</span>
                 </div>
@@ -406,11 +441,11 @@
         </section>
 
         <!-- 區塊四（依 3-1 順序第 3 個）：證照與獎項 & 經歷里程碑 (時間軸排版) -->
-        <section id="milestones" class="fade-in-section bg-gradient-to-br from-[#F7F1FC] to-[#EBF5EF] rounded-3xl p-6 sm:p-10 border border-sunset-200/80 shadow-sm">
+        <section id="milestones" class="fade-in-section bg-gradient-to-br from-[#F7F1FC] via-[#FDF5F7] to-[#F3EBF9] rounded-3xl p-6 sm:p-10 border border-sunset-200/80 shadow-sm">
           <div class="flex items-center gap-3 mb-4">
-            <span class="w-10 h-10 rounded-2xl bg-white text-leaf-700 flex items-center justify-center text-xl shadow-2xs">📜</span>
+            <span class="w-10 h-10 rounded-2xl bg-white text-crimson-600 flex items-center justify-center text-xl shadow-2xs">📜</span>
             <div>
-              <span class="text-xs font-medium tracking-wider text-leaf-700 uppercase">CERTIFICATES &amp; MILESTONES</span>
+              <span class="text-xs font-medium tracking-wider text-crimson-600 uppercase">CERTIFICATES &amp; MILESTONES</span>
               <h2 class="text-2xl sm:text-3xl font-bold text-sunset-900">證照與人生里程碑</h2>
             </div>
           </div>
@@ -420,14 +455,14 @@
           </p>
 
           <!-- 垂直時間軸 -->
-          <div class="relative pl-7 sm:pl-9 border-l-2 border-sunset-300 space-y-8 ml-2">
+          <div class="relative pl-7 sm:pl-9 border-l-2 border-crimson-300 space-y-8 ml-2">
             
             <!-- 里程碑 1：2026 丙級中餐證照 -->
-            <div class="relative bg-white/95 rounded-2xl p-5 sm:p-6 border border-sunset-200/80 shadow-2xs">
-              <span class="absolute -left-[37px] sm:-left-[45px] top-6 w-4 h-4 rounded-full bg-sunset-600 ring-4 ring-[#F7F1FC]"></span>
+            <div class="relative bg-white/95 rounded-2xl p-5 sm:p-6 border border-crimson-200/80 shadow-2xs">
+              <span class="absolute -left-[37px] sm:-left-[45px] top-6 w-4 h-4 rounded-full bg-crimson-500 ring-4 ring-[#FDF5F7]"></span>
               <div class="flex flex-wrap items-center gap-2 mb-2">
-                <span class="px-3 py-0.5 rounded-full text-sm font-bold bg-sunset-600 text-white">2026</span>
-                <span class="px-3 py-0.5 rounded-full text-sm font-medium bg-purple-100 text-sunset-800">🏅 專業證照</span>
+                <span class="px-3 py-0.5 rounded-full text-sm font-bold bg-crimson-500 text-white">2026</span>
+                <span class="px-3 py-0.5 rounded-full text-sm font-medium bg-crimson-50 text-crimson-700">🏅 專業證照</span>
                 <span class="text-sm text-sunset-700">身分：家管</span>
               </div>
               <h3 class="font-literary text-xl font-bold text-sunset-900 mb-1.5">考取丙級中餐證照</h3>
@@ -438,7 +473,7 @@
 
             <!-- 里程碑 2：2002 花鳥寫意展出 -->
             <div class="relative bg-white/95 rounded-2xl p-5 sm:p-6 border border-sunset-200/80 shadow-2xs">
-              <span class="absolute -left-[37px] sm:-left-[45px] top-6 w-4 h-4 rounded-full bg-sunset-400 ring-4 ring-[#F7F1FC]"></span>
+              <span class="absolute -left-[37px] sm:-left-[45px] top-6 w-4 h-4 rounded-full bg-sunset-500 ring-4 ring-[#F7F1FC]"></span>
               <div class="flex flex-wrap items-center gap-2 mb-2">
                 <span class="px-3 py-0.5 rounded-full text-sm font-bold bg-sunset-100 text-sunset-800">2002</span>
                 <span class="px-3 py-0.5 rounded-full text-sm font-medium bg-sunset-50 text-sunset-700">🎨 藝術展出</span>
@@ -451,124 +486,11 @@
             </div>
 
             <!-- 里程碑 3：1985 種植花卉專精 -->
-            <div class="relative bg-white/95 rounded-2xl p-5 sm:p-6 border border-sunset-200/80 shadow-2xs">
-              <span class="absolute -left-[37px] sm:-left-[45px] top-6 w-4 h-4 rounded-full bg-leaf-600 ring-4 ring-[#F7F1FC]"></span>
+            <div class="relative bg-white/95 rounded-2xl p-5 sm:p-6 border border-crimson-200/80 shadow-2xs">
+              <span class="absolute -left-[37px] sm:-left-[45px] top-6 w-4 h-4 rounded-full bg-crimson-400 ring-4 ring-[#F3EBF9]"></span>
               <div class="flex flex-wrap items-center gap-2 mb-2">
-                <span class="px-3 py-0.5 rounded-full text-sm font-bold bg-leaf-100 text-leaf-700">1985</span>
-                <span class="px-3 py-0.5 rounded-full text-sm font-medium bg-leaf-50 text-leaf-700">🌱 植栽起點</span>
-                <span class="text-sm text-leaf-700">身分：學生</span>
-              </div>
-              <h3 class="font-literary text-xl font-bold text-sunset-900 mb-1.5">深耕花卉種植知識</h3>
-              <p class="text-base text-sunset-900/85 leading-relaxed">
-                開啟與植物的緣分，在學生時期親手種植花卉，建立起對<strong>花卉概念知識的專精</strong>，種下未來庭院花園夢想的種子。
-              </p>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- 區塊五：聯絡與行動號召 (滿版紫綠漸層色塊) -->
-        <section id="contact" class="fade-in-section rounded-3xl p-7 sm:p-10 bg-gradient-to-r from-sunset-700 via-sunset-600 to-leaf-600 text-white shadow-md relative overflow-hidden">
-          <div class="relative z-10 max-w-2xl">
-            <span class="inline-block px-3.5 py-1 rounded-full bg-white/20 text-white text-sm mb-3">
-              🪻 紅蜻蜓・期待與你相遇
-            </span>
-              </div>
-              <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 class="font-literary text-xl font-bold text-sunset-900 mb-2">花卉種植與照護實踐</h3>
-                  <p class="text-base text-sunset-900/80 leading-relaxed">
-                    自 1985 年起投入花卉種植，從土壤、日照到四季習性細心觀察，累積深厚的花卉概念知識與培育經驗。
-                  </p>
-                </div>
-                <div class="mt-4 pt-3 border-t border-sunset-200/60 flex items-center justify-between text-sm text-sunset-700">
-                  <span>領域：花卉・植物</span>
-                  <span>1985 年起持續耕耘</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- 作品卡片 2：依據經歷 2002 年花鳥寫意展出 -->
-            <article class="rounded-2xl overflow-hidden border border-sunset-200/90 bg-[#FDF9F3] flex flex-col shadow-2xs hover:shadow-md transition">
-              <div class="aspect-[16/10] overflow-hidden bg-sunset-100 relative">
-                <img 
-                  src="work2.jpg" 
-                  alt="花鳥寫意繪畫展出作品意象" 
-                  loading="lazy"
-                  onerror="this.onerror=null; this.src='https://picsum.photos/seed/birdpainting/800/500';"
-                  class="w-full h-full object-cover"
-                />
-                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium bg-white/90 text-sunset-700 shadow-2xs">
-                  🖌️ 繪畫創作
-                </span>
-              </div>
-              <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 class="font-literary text-xl font-bold text-sunset-900 mb-2">花鳥寫意繪畫展出</h3>
-                  <p class="text-base text-sunset-900/80 leading-relaxed">
-                    將長年對花卉與自然的細膩觀察融入筆墨，以溫潤寫意筆觸描繪花鳥神韻，並於 2002 年正式參與展覽。
-                  </p>
-                </div>
-                <div class="mt-4 pt-3 border-t border-sunset-200/60 flex items-center justify-between text-sm text-sunset-700">
-                  <span>領域：花鳥寫意</span>
-                  <span>2002 公開展出</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- 區塊四（依 3-1 順序第 3 個）：證照與獎項 & 經歷里程碑 (時間軸排版) -->
-        <section id="milestones" class="fade-in-section bg-gradient-to-br from-[#FFF7EE] to-[#FDF2E6] rounded-3xl p-6 sm:p-10 border border-sunset-200/80 shadow-sm">
-          <div class="flex items-center gap-3 mb-4">
-            <span class="w-10 h-10 rounded-2xl bg-white text-sunset-600 flex items-center justify-center text-xl shadow-2xs">📜</span>
-            <div>
-              <span class="text-xs font-medium tracking-wider text-sunset-600 uppercase">CERTIFICATES &amp; MILESTONES</span>
-              <h2 class="text-2xl sm:text-3xl font-bold text-sunset-900">證照與人生里程碑</h2>
-            </div>
-          </div>
-
-          <p class="text-base text-[#4A352A] mb-8 leading-relaxed">
-            每一個階段的學習與累積，都是通往庭院花園夢想的養分。
-          </p>
-
-          <!-- 垂直時間軸 -->
-          <div class="relative pl-7 sm:pl-9 border-l-2 border-sunset-300 space-y-8 ml-2">
-            
-            <!-- 里程碑 1：2026 丙級中餐證照 -->
-            <div class="relative bg-white/95 rounded-2xl p-5 sm:p-6 border border-sunset-200/80 shadow-2xs">
-              <span class="absolute -left-[37px] sm:-left-[45px] top-6 w-4 h-4 rounded-full bg-sunset-500 ring-4 ring-[#FFF7EE]"></span>
-              <div class="flex flex-wrap items-center gap-2 mb-2">
-                <span class="px-3 py-0.5 rounded-full text-sm font-bold bg-sunset-500 text-white">2026</span>
-                <span class="px-3 py-0.5 rounded-full text-sm font-medium bg-amber-100 text-amber-900">🏅 專業證照</span>
-                <span class="text-sm text-sunset-700">身分：家管</span>
-              </div>
-              <h3 class="font-literary text-xl font-bold text-sunset-900 mb-1.5">考取丙級中餐證照</h3>
-              <p class="text-base text-sunset-900/85 leading-relaxed">
-                在照顧家庭之餘持續自我挑戰，透過紮實練習順利考取<strong>丙級中餐證照</strong>，將對生活美學與手作的熱情延伸至飲食料理之中。
-              </p>
-            </div>
-
-            <!-- 里程碑 2：2002 花鳥寫意展出 -->
-            <div class="relative bg-white/95 rounded-2xl p-5 sm:p-6 border border-sunset-200/80 shadow-2xs">
-              <span class="absolute -left-[37px] sm:-left-[45px] top-6 w-4 h-4 rounded-full bg-sunset-400 ring-4 ring-[#FFF7EE]"></span>
-              <div class="flex flex-wrap items-center gap-2 mb-2">
-                <span class="px-3 py-0.5 rounded-full text-sm font-bold bg-sunset-100 text-sunset-800">2002</span>
-                <span class="px-3 py-0.5 rounded-full text-sm font-medium bg-sunset-50 text-sunset-700">🎨 藝術展出</span>
-                <span class="text-sm text-sunset-700">身分：家管</span>
-              </div>
-              <h3 class="font-literary text-xl font-bold text-sunset-900 mb-1.5">花鳥寫意畫作展出</h3>
-              <p class="text-base text-sunset-900/85 leading-relaxed">
-                投入繪畫創作，將對自然花鳥的細膩觀察化為筆下風景，並成功參與<strong>花鳥寫意展出</strong>。
-              </p>
-            </div>
-
-            <!-- 里程碑 3：1985 種植花卉專精 -->
-            <div class="relative bg-white/95 rounded-2xl p-5 sm:p-6 border border-sunset-200/80 shadow-2xs">
-              <span class="absolute -left-[37px] sm:-left-[45px] top-6 w-4 h-4 rounded-full bg-leaf-600 ring-4 ring-[#FFF7EE]"></span>
-              <div class="flex flex-wrap items-center gap-2 mb-2">
-                <span class="px-3 py-0.5 rounded-full text-sm font-bold bg-sunset-100 text-sunset-800">1985</span>
-                <span class="px-3 py-0.5 rounded-full text-sm font-medium bg-emerald-50 text-leaf-700">🌱 植栽起點</span>
+                <span class="px-3 py-0.5 rounded-full text-sm font-bold bg-crimson-100 text-crimson-700">1985</span>
+                <span class="px-3 py-0.5 rounded-full text-sm font-medium bg-crimson-50 text-crimson-700">🌱 植栽起點</span>
                 <span class="text-sm text-sunset-700">身分：學生</span>
               </div>
               <h3 class="font-literary text-xl font-bold text-sunset-900 mb-1.5">深耕花卉種植知識</h3>
@@ -580,11 +502,11 @@
           </div>
         </section>
 
-        <!-- 區塊五：聯絡與行動號召 (滿版晚霞暖色塊) -->
-        <section id="contact" class="fade-in-section rounded-3xl p-7 sm:p-10 bg-gradient-to-r from-sunset-600 via-sunset-500 to-amber-500 text-white shadow-md relative overflow-hidden">
+        <!-- 區塊五：聯絡與行動號召 (滿版紅紫漸層色塊) -->
+        <section id="contact" class="fade-in-section rounded-3xl p-7 sm:p-10 bg-gradient-to-r from-crimson-600 to-sunset-600 text-white shadow-md relative overflow-hidden">
           <div class="relative z-10 max-w-2xl">
             <span class="inline-block px-3.5 py-1 rounded-full bg-white/20 text-white text-sm mb-3">
-              🌅 紅蜻蜓・期待與你相遇
+              🍁 紅蜻蜓・期待與你相遇
             </span>
             <h2 class="text-2xl sm:text-3xl font-bold mb-3">
               喜歡綠化植物或花鳥繪畫嗎？
@@ -593,7 +515,7 @@
               無論是想交流花卉種植心得、欣賞作品，或是期待未來庭院花園店面的消息，都很歡迎與我聯繫。
             </p>
             <div class="flex flex-wrap gap-3">
-              <a href="#top" class="inline-flex items-center justify-center px-6 py-3.5 rounded-2xl bg-white text-sunset-700 font-bold text-base hover:bg-sunset-50 transition shadow-sm">
+              <a href="#top" class="inline-flex items-center justify-center px-6 py-3.5 rounded-2xl bg-white text-crimson-700 font-bold text-base hover:bg-crimson-50 transition shadow-sm">
                 回到名片頂端 ↑
               </a>
             </div>
